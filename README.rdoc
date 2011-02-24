@@ -1,21 +1,22 @@
-MubDub
-======
+= MubDub
 
 MubDub is something I hacked together in two part-time days to rescue about
 200 photos that had mysteriously disappeared from my iPhone. The technical
-details were gleaned from
-[iphonebackupdb.py](http://www.employees.org/~mstenber/iphonebackupdb.py).
+details were gleaned from iphonebackupdb.py[1].
 
 Use at your own risk. Don't use it without at least partially understanding
 the code.
 
 Only runs on OSes that support hard links.
 
-Description
------------
+== Description
 
 MubDub parses the Manifest.mdbd and Manifest.mdbx files in the working
 directory to map the SHA file names used in the archive to human-readable
 file names. Then it sets up a directory structure with those file names
 hard linked to the original SHA-named files. This allows you to move those
 files wherever you want and then throw away the archive if so desired.
+
+== Links
+
+[1] http://www.employees.org/~mstenber/iphonebackupdb.py
